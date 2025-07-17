@@ -6,16 +6,40 @@
     <style>
       /* Large devices (laptops/desktops, 992px and up) */
       @media only screen and (min-width: 992px) {
-        .example {background: orange;}
+        .section { background: orange; }
       }
 
       /* Medium devices (landscape tablets, 768px and up) */
       @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .example {background: blue;}
+        .section { background: blue; }
+      }
+
+      /* Small devices (phones, less than 768px) */
+      @media only screen and (max-width: 767px) {
+        .section { background: lightgray; }
+      }
+
+      .section {
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        color: #222;
       }
     </style>
   </head>
   <body>
-    <div class="example">Menu Example</div>
+    <h1>Our Menu</h1>
+    <div class="section">
+      <h2>Appetizers</h2>
+      <p>Start your meal with our delicious appetizers, crafted to delight your taste buds.</p>
+    </div>
+    <div class="section">
+      <h2>Main Courses</h2>
+      <p>Enjoy our hearty and flavorful main courses, prepared with the freshest ingredients.</p>
+    </div>
+    <div class="section">
+      <h2>Desserts</h2>
+      <p>End your meal on a sweet note with our irresistible desserts.</p>
+    </div>
   </body>
 </html>
